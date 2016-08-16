@@ -1,0 +1,116 @@
+<ion-view view-title="Game">
+    <style>
+
+[class^="card-"] {
+    width: {{cardWidthPortrait}}px;
+    height: {{cardHeightPortrait}}px;
+}
+
+.card-- {
+    width: 0px !important;
+    height: 0px !important;
+}
+
+.pyramid { top: {{pyramidTopPortrait}}px; left: {{pyramidLeftPortrait}}px; }
+
+.pyramid-0 {position: absolute; left: {{locationsPortrait[0].left}}px; top: {{locationsPortrait[0].top}}px;}
+.pyramid-1 {position: absolute; left: {{locationsPortrait[1].left}}px; top: {{locationsPortrait[1].top}}px;}
+.pyramid-2 {position: absolute; left: {{locationsPortrait[2].left}}px; top: {{locationsPortrait[2].top}}px;}
+.pyramid-3 {position: absolute; left: {{locationsPortrait[3].left}}px; top: {{locationsPortrait[3].top}}px;}
+.pyramid-4 {position: absolute; left: {{locationsPortrait[4].left}}px; top: {{locationsPortrait[4].top}}px;}
+.pyramid-5 {position: absolute; left: {{locationsPortrait[5].left}}px; top: {{locationsPortrait[5].top}}px;}
+.pyramid-6 {position: absolute; left: {{locationsPortrait[6].left}}px; top: {{locationsPortrait[6].top}}px;}
+.pyramid-7 {position: absolute; left: {{locationsPortrait[7].left}}px; top: {{locationsPortrait[7].top}}px;}
+.pyramid-8 {position: absolute; left: {{locationsPortrait[8].left}}px; top: {{locationsPortrait[8].top}}px;}
+.pyramid-9 {position: absolute; left: {{locationsPortrait[9].left}}px; top: {{locationsPortrait[9].top}}px;}
+.pyramid-10 {position: absolute; left: {{locationsPortrait[10].left}}px; top: {{locationsPortrait[10].top}}px;}
+.pyramid-11 {position: absolute; left: {{locationsPortrait[11].left}}px; top: {{locationsPortrait[11].top}}px;}
+.pyramid-12 {position: absolute; left: {{locationsPortrait[12].left}}px; top: {{locationsPortrait[12].top}}px;}
+.pyramid-13 {position: absolute; left: {{locationsPortrait[13].left}}px; top: {{locationsPortrait[13].top}}px;}
+.pyramid-14 {position: absolute; left: {{locationsPortrait[14].left}}px; top: {{locationsPortrait[14].top}}px;}
+.pyramid-15 {position: absolute; left: {{locationsPortrait[15].left}}px; top: {{locationsPortrait[15].top}}px;}
+.pyramid-16 {position: absolute; left: {{locationsPortrait[16].left}}px; top: {{locationsPortrait[16].top}}px;}
+.pyramid-17 {position: absolute; left: {{locationsPortrait[17].left}}px; top: {{locationsPortrait[17].top}}px;}
+.pyramid-18 {position: absolute; left: {{locationsPortrait[18].left}}px; top: {{locationsPortrait[18].top}}px;}
+.pyramid-19 {position: absolute; left: {{locationsPortrait[19].left}}px; top: {{locationsPortrait[19].top}}px;}
+.pyramid-20 {position: absolute; left: {{locationsPortrait[20].left}}px; top: {{locationsPortrait[20].top}}px;}
+
+@media only screen and (orientation: landscape) {
+
+[class^="card-"] {
+    width: {{cardWidthLandscape}}px;
+    height: {{cardHeightLandscape}}px;
+}
+
+.card-- {
+    width: 0px !important;
+    height: 0px !important;
+}
+
+.pyramid { top: {{pyramidTopLandscape}}px; left: {{pyramidLeftLandscape}}px; }
+
+.pyramid-0 {position: absolute; left: {{locationsLandscape[0].left}}px; top: {{locationsLandscape[0].top}}px;}
+.pyramid-1 {position: absolute; left: {{locationsLandscape[1].left}}px; top: {{locationsLandscape[1].top}}px;}
+.pyramid-2 {position: absolute; left: {{locationsLandscape[2].left}}px; top: {{locationsLandscape[2].top}}px;}
+.pyramid-3 {position: absolute; left: {{locationsLandscape[3].left}}px; top: {{locationsLandscape[3].top}}px;}
+.pyramid-4 {position: absolute; left: {{locationsLandscape[4].left}}px; top: {{locationsLandscape[4].top}}px;}
+.pyramid-5 {position: absolute; left: {{locationsLandscape[5].left}}px; top: {{locationsLandscape[5].top}}px;}
+.pyramid-6 {position: absolute; left: {{locationsLandscape[6].left}}px; top: {{locationsLandscape[6].top}}px;}
+.pyramid-7 {position: absolute; left: {{locationsLandscape[7].left}}px; top: {{locationsLandscape[7].top}}px;}
+.pyramid-8 {position: absolute; left: {{locationsLandscape[8].left}}px; top: {{locationsLandscape[8].top}}px;}
+.pyramid-9 {position: absolute; left: {{locationsLandscape[9].left}}px; top: {{locationsLandscape[9].top}}px;}
+.pyramid-10 {position: absolute; left: {{locationsLandscape[10].left}}px; top: {{locationsLandscape[10].top}}px;}
+.pyramid-11 {position: absolute; left: {{locationsLandscape[11].left}}px; top: {{locationsLandscape[11].top}}px;}
+.pyramid-12 {position: absolute; left: {{locationsLandscape[12].left}}px; top: {{locationsLandscape[12].top}}px;}
+.pyramid-13 {position: absolute; left: {{locationsLandscape[13].left}}px; top: {{locationsLandscape[13].top}}px;}
+.pyramid-14 {position: absolute; left: {{locationsLandscape[14].left}}px; top: {{locationsLandscape[14].top}}px;}
+.pyramid-15 {position: absolute; left: {{locationsLandscape[15].left}}px; top: {{locationsLandscape[15].top}}px;}
+.pyramid-16 {position: absolute; left: {{locationsLandscape[16].left}}px; top: {{locationsLandscape[16].top}}px;}
+.pyramid-17 {position: absolute; left: {{locationsLandscape[17].left}}px; top: {{locationsLandscape[17].top}}px;}
+.pyramid-18 {position: absolute; left: {{locationsLandscape[18].left}}px; top: {{locationsLandscape[18].top}}px;}
+.pyramid-19 {position: absolute; left: {{locationsLandscape[19].left}}px; top: {{locationsLandscape[19].top}}px;}
+.pyramid-20 {position: absolute; left: {{locationsLandscape[20].left}}px; top: {{locationsLandscape[20].top}}px;}
+
+}
+
+    </style>
+
+      <ion-content id="content" scroll="false" style="background-image: url('img/tapete.png');" ng-click="showActionsheet()">
+    <div class="table">
+      <div class="score">Puntos: {{move.length}}</div>
+      <div class="info-panel" ng-show="!wellDone() && gameOver()"><div class="game-over"><h1>Game Over</h1><button ng-click="newGame();  $event.stopPropagation();">Play Again</button></div></div>
+      <div id="firework" class="info-panel" ng-show="wellDone()"><div class="well-done"><h1>Well Done!</h1><button ng-click="newGame(); $event.stopPropagation();" onclick="$('div#firework').fireworks('destroy');">Play Again</button></div></div>
+      <div class="stock">   
+        <div ng-repeat="card in stock.slice(-7)" style="position: absolute; left: {{2*$index}}px; top: {{-2*$index}}px;" class="card-back" ng-show="stock.length > 0" ng-click="flip(1); $event.stopPropagation();"></div>
+        <div class="card-empty" ng-show="stock.length === 0"></div>
+      </div>
+      <div class="waste">
+        <div class="card-{{waste.last().suite}}-{{waste.last().val}}" ng-show="waste.length > 0" ng-click="(selected.val + waste.last().val === 10 && selected !== null && selected !== waste.last()) || (selected === waste.last() && waste.last().val === 10) ? moveSelectedToWaste() : selectWasteCard(waste.last()); $event.stopPropagation();" ng-class="{active: waste.last() === selected, 'possible-target': (selected.val + waste.last().val === 10 && selected !== null && selected !== waste.last() && waste.length > 0) || (selected === waste.last() && waste.last().val === 10)}"></div>
+        <div class="card-empty" ng-show="waste.length === 0"></div>        
+      </div>
+	  <div class="trash">
+        <div class="card-{{trash.last().suite}}-{{trash.last().val}}" ng-show="trash.length > 0" ng-click="(selected.val + trash.last().val === 10 && selected !== null && selected !== trash.last()) || (selected === trash.last() && trash.last().val === 10) ? moveSelectedToTrash() : selectTrashCard(trash.last()); $event.stopPropagation();" ng-class="{active: trash.last() === selected, 'possible-target': (selected.val + trash.last().val === 10 && selected !== null && selected !== trash.last() && trash.length > 0) || (selected === trash.last() && trash.last().val === 10)}"></div>
+        <div class="card-empty" ng-show="trash.length === 0"></div>        
+      </div>
+      <div class="pyramid">
+        <div class="pyramid-pyramid">
+          <div ng-repeat="card in pyramid.cards" class="card-back pyramid-{{$index}}" ng-show="card.face === face.down">
+          </div>
+          <div ng-repeat="card in pyramid.cards" class="card-{{card.suite + '-' + card.val + ' pyramid-' + $index}}" ng-show="card.face === face.up && pyramid.enabled[$index]" ng-click="(selected.val + card.val === 10 && selected !== null && selected !== card) || (selected === card && card.val === 10) ? moveSelectedToPyramid($index) : selectPyramidCard($index); $event.stopPropagation();" ng-class="{active: card === selected, 'possible-target': (selected.val + card.val === 10 && selected !== null && selected !== card) || (selected === card && card.val === 10)}">
+          </div>
+        </div>
+      </div> 
+<!--
+      <div class="move">
+          <div ng-repeat="card in move" style="position: absolute; left: {{20*$index}}px; top:0px;" class="card-{{card.suite + '-' + card.val}}">
+          </div>
+      </div>
+      <div class="check">
+          <div ng-repeat="card in check" style="position: absolute; left: {{20*$index}}px; top:0px;" class="card-{{card.suite + '-' + card.val}}">
+          </div>
+      </div>
+    </div>
+--> 
+      </ion-content>
+
+</ion-view>

@@ -1,0 +1,57 @@
+<ion-view view-title="Estadísticas">
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+
+<ion-content style="background-image: url('img/tapete.png'); color: #ccc;">
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 2px;
+}
+
+#last tr:nth-child(even){background-color: green}
+#last td{text-align: center;}
+</style>
+<p>&nbsp;</p>
+<div style="width: 80%; margin: 0 auto;">
+<table>
+  <tr>
+    <td>Partidas jugadas: </td>
+    <td>{{numPlayedGames}} </td>
+  </tr>
+  <tr>
+    <td>Partidas terminadas: </td>
+    <td>{{numFinishedGames}} </td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;Victorias: </td>
+    <td>{{numWonGames}} </td>
+  </tr>
+  <tr>
+    <td>&nbsp;&nbsp;&nbsp;Perdidas: </td>
+    <td>{{numLostGames}} </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table id="last" >
+  <tr>
+    <th><b>Últimas partidas</b></th>
+    <th><b>Puntos</b></th>
+  </tr>
+  <tr ng-repeat="score in lastScores track by $index">
+    <td>-{{$index+1}}</td>
+    <td>{{score}}</td>
+  </tr>
+</table>
+</div>
+
+</ion-content>
+
+</ion-view>

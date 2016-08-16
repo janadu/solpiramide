@@ -1,0 +1,72 @@
+.table { background-color: #060; padding: 2em; border-radius: 2em; height: 600px; min-width: 770px; position: relative;}
+
+.game-over {position: absolute; z-index: 100; border: 4px outset; background-color: #ff7; text-align: center; margin-top: 200px; padding: 2em; margin-left: 300px; margin-right: 100px;}
+
+.active { margin-left: -2px; margin-top: -2px; border: 2px solid yellow !important; }
+
+.possible-target { box-shadow: 0px 0px 20px 10px rgba(51,51,51,1); }
+
+.tableau-column .possible-target:hover { margin-left: -2px; margin-top: -2px; border: 2px solid #0F0 !important; }
+
+.foundations .possible-target:hover { border: 1px solid #0F0 !important; }
+
+.stock { position: absolute; top: 20px; left: 20px; }
+
+.waste { position: absolute; top: 20px; left: 120px; }
+
+.foundations { position: absolute; top: 20px; left: 300px; }
+
+.foundations div { position: relative; display: inline-block; margin-left: 1em; /* margin-top: 2em; */}
+
+.tableau { position: absolute; display: block; top: 200px; left: 130px; }
+
+.tableau-column { position: relative; margin-right: 6em; display: inline-block; }
+
+.card-empty{ width: 52px; height: 80px; line-height: 92px; text-align: center; font-size: 32px; color: #bbb; margin: 4px; border: 1px dashed #ccc; border-radius: 4px}
+.card-not-empty{ width: 52px; height: 80px; line-height: 92px; text-align: center; font-size: 32px; color: #bbb; margin: 4px; border: 1px transparent; border-radius: 4px}
+.card-back{ width: 52px; height: 80px; background: url('card-back-old.png') /*-52px -320px*/}
+.card-0-0{ width: 52px; height: 80px; background: url('cards.png') 0 0}
+.card-0-1{ width: 52px; height: 80px; background: url('cards.png') -52px 0}
+.card-0-2{ width: 52px; height: 80px; background: url('cards.png') -104px 0}
+.card-0-3{ width: 52px; height: 80px; background: url('cards.png') -156px 0}
+.card-0-4{ width: 52px; height: 80px; background: url('cards.png') -208px 0}
+.card-0-5{ width: 52px; height: 80px; background: url('cards.png') -260px 0}
+.card-0-6{ width: 52px; height: 80px; background: url('cards.png') -312px 0}
+.card-0-7{ width: 52px; height: 80px; background: url('cards.png') -364px 0}
+.card-0-8{ width: 52px; height: 80px; background: url('cards.png') -416px 0}
+.card-0-9{ width: 52px; height: 80px; background: url('cards.png') -468px 0}
+.card-0-10{ width: 52px; height: 80px; background: url('cards.png') -520px 0}
+.card-1-0{ width: 52px; height: 80px; background: url('cards.png') 0 -80px}
+.card-1-1{ width: 52px; height: 80px; background: url('cards.png') -52px -80px}
+.card-1-2{ width: 52px; height: 80px; background: url('cards.png') -104px -80px}
+.card-1-3{ width: 52px; height: 80px; background: url('cards.png') -156px -80px}
+.card-1-4{ width: 52px; height: 80px; background: url('cards.png') -208px -80px}
+.card-1-5{ width: 52px; height: 80px; background: url('cards.png') -260px -80px}
+.card-1-6{ width: 52px; height: 80px; background: url('cards.png') -312px -80px}
+.card-1-7{ width: 52px; height: 80px; background: url('cards.png') -364px -80px}
+.card-1-8{ width: 52px; height: 80px; background: url('cards.png') -416px -80px}
+.card-1-9{ width: 52px; height: 80px; background: url('cards.png') -468px -80px}
+.card-1-10{ width: 52px; height: 80px; background: url('cards.png') -520px -80px}
+.card-2-0{ width: 52px; height: 80px; background: url('cards.png') 0 -160px}
+.card-2-1{ width: 52px; height: 80px; background: url('cards.png') -52px -160px}
+.card-2-2{ width: 52px; height: 80px; background: url('cards.png') -104px -160px}
+.card-2-3{ width: 52px; height: 80px; background: url('cards.png') -156px -160px}
+.card-2-4{ width: 52px; height: 80px; background: url('cards.png') -208px -160px}
+.card-2-5{ width: 52px; height: 80px; background: url('cards.png') -260px -160px}
+.card-2-6{ width: 52px; height: 80px; background: url('cards.png') -312px -160px}
+.card-2-7{ width: 52px; height: 80px; background: url('cards.png') -364px -160px}
+.card-2-8{ width: 52px; height: 80px; background: url('cards.png') -416px -160px}
+.card-2-9{ width: 52px; height: 80px; background: url('cards.png') -468px -160px}
+.card-2-10{ width: 52px; height: 80px; background: url('cards.png') -520px -160px}
+.card-3-0{ width: 52px; height: 80px; background: url('cards.png') 0 -240px}
+.card-3-1{ width: 52px; height: 80px; background: url('cards.png') -52px -240px}
+.card-3-2{ width: 52px; height: 80px; background: url('cards.png') -104px -240px}
+.card-3-3{ width: 52px; height: 80px; background: url('cards.png') -156px -240px}
+.card-3-4{ width: 52px; height: 80px; background: url('cards.png') -208px -240px}
+.card-3-5{ width: 52px; height: 80px; background: url('cards.png') -260px -240px}
+.card-3-6{ width: 52px; height: 80px; background: url('cards.png') -312px -240px}
+.card-3-7{ width: 52px; height: 80px; background: url('cards.png') -364px -240px}
+.card-3-8{ width: 52px; height: 80px; background: url('cards.png') -416px -240px}
+.card-3-9{ width: 52px; height: 80px; background: url('cards.png') -468px -240px}
+.card-3-10{ width: 52px; height: 80px; background: url('cards.png') -520px -240px}
+
