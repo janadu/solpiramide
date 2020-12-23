@@ -1,1 +1,1 @@
-# janadu.github.io 2
+# janadu.github.io
